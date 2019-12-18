@@ -1,0 +1,49 @@
+{
+    "name": "resume",
+    "version": "1.0.0",
+    "description": "Shawn Headrick's Resume",
+    "keywords": [
+        "resume",
+        "resume-cli",
+        "json",
+        "html",
+        "pdf"
+    ],
+    "author": {
+        "name": "Shawn Headrick",
+        "email": "shawn_headrick@yahoo.com",
+        "url": "https://www.github.com/IronManRust"
+    },
+    "homepage": "https://www.github.com/IronManRust/resume",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/IronManRust/resume.git"
+    },
+    "bugs": {
+        "url": "https://www.github.com/IronManRust/resume/issues"
+    },
+    "license": "MIT",
+    "scripts": {
+        "clean": "rimraf ./dist",
+        "build": "npm run clean && npm run build-index && npm run build-resume-json && npm run build-resume-html && npm run build-resume-pdf",
+        "build-index": "./node_modules/.bin/copyfiles --flat ./css/*.* ./html/*.* ./img/*.* ./dist",
+        "build-resume-json": "./node_modules/.bin/copyfiles --flat ./resume.json ./dist",
+        "build-resume-html": "npm run build-resume-html-kwan && npm run build-resume-html-short && npm run build-resume-html-stackoverflow",
+        "build-resume-html-kwan": "./node_modules/.bin/resume export --theme kwan ./dist/resume-kwan.html",
+        "build-resume-html-short": "./node_modules/.bin/resume export --theme short ./dist/resume-short.html",
+        "build-resume-html-stackoverflow": "./node_modules/.bin/resume export --theme stackoverflow ./dist/resume-stackoverflow.html",
+        "build-resume-pdf": "npm run build-resume-pdf-kwan && npm run build-resume-pdf-short && npm run build-resume-pdf-stackoverflow",
+        "build-resume-pdf-kwan": "./node_modules/.bin/resume export --theme kwan ./dist/resume-kwan.pdf",
+        "build-resume-pdf-short": "./node_modules/.bin/resume export --theme short ./dist/resume-short.pdf",
+        "build-resume-pdf-stackoverflow": "./node_modules/.bin/resume export --theme stackoverflow ./dist/resume-stackoverflow.pdf",
+        "test": "./node_modules/.bin/resume test"
+    },
+    "devDependencies": {
+        "copyfiles": "^2.1.1",
+        "jsonresume-theme-kwan": "^0.0.2",
+        "jsonresume-theme-short": "^0.1.7",
+        "jsonresume-theme-stackoverflow": "^1.4.0",
+        "resume-cli": "^1.2.7",
+        "rimraf": "^3.0.0"
+    }
+}
