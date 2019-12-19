@@ -4,10 +4,12 @@
     "description": "Shawn Headrick's Resume",
     "keywords": [
         "resume",
-        "resume-cli",
         "json",
+        "txt",
         "html",
-        "pdf"
+        "pdf",
+        "md",
+        "yml"
     ],
     "author": {
         "name": "Shawn Headrick",
@@ -24,26 +26,27 @@
     },
     "license": "MIT",
     "scripts": {
-        "clean": "rimraf ./dist",
-        "build": "npm run clean && npm run build-index && npm run build-resume-json && npm run build-resume-html && npm run build-resume-pdf",
+        "clean": "./node_modules/.bin/rimraf ./dist",
+        "build": "npm run clean && npm run build-index && npm run build-resume-json && npm run build-resume-txt && npm run build-resume-html && npm run build-resume-pdf && npm run build-resume-md && npm run build-resume-yml",
         "build-index": "./node_modules/.bin/copyfiles --flat ./css/*.* ./html/*.* ./img/*.* ./dist",
         "build-resume-json": "./node_modules/.bin/copyfiles --flat ./resume.json ./dist",
-        "build-resume-html": "npm run build-resume-html-kwan && npm run build-resume-html-short && npm run build-resume-html-stackoverflow",
-        "build-resume-html-kwan": "./node_modules/.bin/resume export --theme kwan ./dist/resume-kwan.html",
-        "build-resume-html-short": "./node_modules/.bin/resume export --theme short ./dist/resume-short.html",
-        "build-resume-html-stackoverflow": "./node_modules/.bin/resume export --theme stackoverflow ./dist/resume-stackoverflow.html",
-        "build-resume-pdf": "npm run build-resume-pdf-kwan && npm run build-resume-pdf-short && npm run build-resume-pdf-stackoverflow",
-        "build-resume-pdf-kwan": "./node_modules/.bin/resume export --theme kwan ./dist/resume-kwan.pdf",
-        "build-resume-pdf-short": "./node_modules/.bin/resume export --theme short ./dist/resume-short.pdf",
-        "build-resume-pdf-stackoverflow": "./node_modules/.bin/resume export --theme stackoverflow ./dist/resume-stackoverflow.pdf",
-        "test": "./node_modules/.bin/resume test"
+        "build-resume-txt": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume.txt",
+        "build-resume-html": "npm run build-resume-html-short && npm run build-resume-html-stackoverflow",
+        "build-resume-html-short": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume-short.html --theme ./node_modules/jsonresume-theme-short",
+        "build-resume-html-stackoverflow": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume-stackoverflow.html --theme ./node_modules/jsonresume-theme-stackoverflow",
+        "build-resume-pdf": "npm run build-resume-pdf-short && npm run build-resume-pdf-stackoverflow",
+        "build-resume-pdf-short": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume-short.pdf --theme ./node_modules/jsonresume-theme-short",
+        "build-resume-pdf-stackoverflow": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume-stackoverflow.pdf --theme ./node_modules/jsonresume-theme-stackoverflow",
+        "build-resume-md": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume.md",
+        "build-resume-yml": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume.yml",
+        "test": "./node_modules/.bin/hackmyresume validate resume.json",
+        "analyze": "./node_modules/.bin/hackmyresume analyze resume.json"
     },
     "devDependencies": {
         "copyfiles": "^2.1.1",
-        "jsonresume-theme-kwan": "^0.0.2",
+        "hackmyresume": "^1.9.0-beta",
         "jsonresume-theme-short": "^0.1.7",
         "jsonresume-theme-stackoverflow": "^1.4.0",
-        "resume-cli": "^1.2.7",
         "rimraf": "^3.0.0"
     }
 }

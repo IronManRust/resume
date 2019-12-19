@@ -4,11 +4,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a7591bdd-024d-4867-a8d2-1525b027e1c1/deploy-status)](https://app.netlify.com/sites/shawn-headrick-resume/deploys)
 
-## Technology References
-
-* [JSON Resume Information](https://www.jsonresume.org "JSON Resume Information")
-* [JSON Resume CLI](https://www.github.com/jsonresume/resume-cli "JSON Resume CLI")
-
 ## TODOs
 
 * [Finalize JSON Data](https://www.jsonresume.org/schema/ "Finalize JSON Data")

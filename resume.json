@@ -2,7 +2,7 @@
     "basics": {
         "name": "Shawn Headrick",
         "label": "Senior Software Engineer",
-        "picture": "https://secure.gravatar.com/avatar/0e70986a410a99d4ea85aed2d06cc40e?size=256",
+        "picture": "./face.png",
         "email": "shawn_headrick@yahoo.com",
         "phone": "630-781-3084",
         "summary": "",
