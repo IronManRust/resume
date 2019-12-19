@@ -46,20 +46,15 @@
         }
     ],
     "education": [{
-            "institution": "University of Illinois, Urbana-Champaign",
-            "area": "Computer Science",
-            "studyType": "Bachelor's Degree",
-            "startDate": "2001-08-21",
-            "endDate": "2005-05-23"
-        },
-        {
-            "institution": "University of Illinois, Urbana-Champaign",
-            "area": "Business Administration",
-            "studyType": "Minor",
-            "startDate": "2001-08-21",
-            "endDate": "2005-05-23"
-        }
-    ],
+        "institution": "University of Illinois, Urbana-Champaign",
+        "area": "Computer Science",
+        "studyType": "Bachelor's Degree",
+        "startDate": "2001-08-21",
+        "endDate": "2005-05-23",
+        "courses": [
+            "Business Administration Minor"
+        ]
+    }],
     "skills": [{
             "name": "Back-End Development",
             "level": "Advanced",
