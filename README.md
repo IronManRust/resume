@@ -7,6 +7,3 @@
 ## TODOs
 
 * [Finalize JSON Data](https://www.jsonresume.org/schema/ "Finalize JSON Data")
-* Copy Build Date To `./dist`
-* Copy Version To `./dist`
-* Setup QR Code On `./dist`

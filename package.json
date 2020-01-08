@@ -1,6 +1,6 @@
 {
     "name": "resume",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Shawn Headrick's Resume",
     "keywords": [
         "resume",
@@ -27,9 +27,10 @@
     "license": "MIT",
     "scripts": {
         "clean": "./node_modules/.bin/rimraf ./dist",
-        "build": "npm run clean && npm run build-index && npm run build-dependencies && npm run build-resume-json && npm run build-resume-txt && npm run build-resume-html && npm run build-resume-pdf && npm run build-resume-md && npm run build-resume-yml",
-        "build-index": "./node_modules/.bin/copyfiles --flat ./css/*.* ./html/*.* ./img/*.* ./dist",
-        "build-dependencies": "./node_modules/.bin/copyfiles --flat ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/bootstrap/dist/css/bootstrap.min.css.map ./dist",
+        "build": "npm run clean && npm run build-index && npm run build-dependencies && npm run build-metadata && npm run build-resume-json && npm run build-resume-txt && npm run build-resume-html && npm run build-resume-pdf && npm run build-resume-md && npm run build-resume-yml",
+        "build-index": "./node_modules/.bin/copyfiles --flat ./css/*.* ./html/*.* ./img/*.* ./js/*.* ./dist",
+        "build-dependencies": "./node_modules/.bin/copyfiles --flat ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/bootstrap/dist/css/bootstrap.min.css.map ./node_modules/qrcodejs/qrcode.min.js ./dist",
+        "build-metadata": "node package-metadata.js",
         "build-resume-json": "./node_modules/.bin/copyfiles --flat ./resume.json ./dist",
         "build-resume-txt": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume.txt",
         "build-resume-html": "npm run build-resume-html-short && npm run build-resume-html-stackoverflow",
@@ -41,14 +42,17 @@
         "build-resume-md": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume.md",
         "build-resume-yml": "./node_modules/.bin/hackmyresume build resume.json TO ./dist/resume.yml",
         "test": "./node_modules/.bin/hackmyresume validate resume.json",
-        "analyze": "./node_modules/.bin/hackmyresume analyze resume.json"
+        "analyze": "./node_modules/.bin/hackmyresume analyze resume.json",
+        "serve": "./node_modules/.bin/http-server ./dist"
     },
     "dependencies": {
-        "bootstrap": "^4.4.1"
+        "bootstrap": "^4.4.1",
+        "qrcodejs": "^1.0.0"
     },
     "devDependencies": {
         "copyfiles": "^2.1.1",
         "hackmyresume": "^1.9.0-beta",
+        "http-server": "^0.12.0",
         "jsonresume-theme-short": "^0.1.7",
         "jsonresume-theme-stackoverflow": "^1.4.0",
         "rimraf": "^3.0.0"
