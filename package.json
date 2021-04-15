@@ -1,6 +1,6 @@
 {
     "name": "resume",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Shawn Headrick's Resume",
     "keywords": [
         "resume",
@@ -46,11 +46,11 @@
         "serve": "./node_modules/.bin/http-server ./dist"
     },
     "dependencies": {
-        "bootstrap": "^4.5.0",
+        "bootstrap": "^4.6.0",
         "qrcodejs": "^1.0.0"
     },
     "devDependencies": {
-        "copyfiles": "^2.3.0",
+        "copyfiles": "^2.4.1",
         "hackmyresume": "^1.9.0-beta",
         "http-server": "^0.12.3",
         "jsonresume-theme-short": "^0.1.7",
