@@ -19,17 +19,17 @@
         ]
     },
     "work": [{
-            "company": "Cengage",
+            "company": "Cengage Group",
             "position": "Senior Software Engineer",
-            "website": "https://www.cengage.com",
+            "website": "https://www.cengagegroup.com",
             "startDate": "2019-06-03",
             "summary": "",
             "highlights": []
         },
         {
-            "company": "Cengage",
+            "company": "Cengage Group",
             "position": "Software Engineer",
-            "website": "https://www.cengage.com",
+            "website": "https://www.cengagegroup.com",
             "startDate": "2010-04-05",
             "endDate": "2019-06-02",
             "summary": "",
@@ -62,9 +62,10 @@
                 ".NET",
                 ".NET Core",
                 "C#",
-                "NodeJS",
+                "Node.js",
                 "REST",
-                "Open API / Swagger",
+                "OpenAPI",
+                "Swagger",
                 "WCF",
                 "Microsoft SQL Server"
             ]
@@ -78,7 +79,7 @@
                 "JavaScript",
                 "TypeScript",
                 "ASP.NET MVC",
-                "ReactJS"
+                "React"
             ]
         }
     ],
