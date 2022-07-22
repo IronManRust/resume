@@ -46,13 +46,13 @@
         "serve": "./node_modules/.bin/http-server ./dist"
     },
     "dependencies": {
-        "bootstrap": "^4.6.0",
+        "bootstrap": "^5.2.0",
         "qrcodejs": "^1.0.0"
     },
     "devDependencies": {
         "copyfiles": "^2.4.1",
         "hackmyresume": "^1.9.0-beta",
-        "http-server": "^0.12.3",
+        "http-server": "^14.1.1",
         "jsonresume-theme-short": "^0.1.7",
         "jsonresume-theme-stackoverflow": "^1.4.0",
         "rimraf": "^3.0.2"
