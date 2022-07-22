@@ -54,7 +54,7 @@
         "hackmyresume": "^1.9.0-beta",
         "http-server": "^14.1.1",
         "jsonresume-theme-short": "^0.1.7",
-        "jsonresume-theme-stackoverflow": "^1.4.0",
+        "jsonresume-theme-stackoverflow": "^2.0.0",
         "rimraf": "^3.0.2"
     }
 }

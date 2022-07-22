@@ -3,59 +3,93 @@
         "name": "Shawn Headrick",
         "label": "Senior Software Engineer",
         "picture": "./face.png",
+        "image": "./face.png",
         "email": "shawn_headrick@yahoo.com",
         "phone": "630-781-3084",
-        "summary": "",
-        "profiles": [{
+        "website": "https://about.me/shawn.headrick",
+        "url": "https://about.me/shawn.headrick",
+        "summary": "Software engineer with 17+ years experience building enterprise-level applications utilizing the Microsoft .NET development stack and the Node.js ecosystem.",
+        "location": {
+            "city": "Batavia",
+            "region": "Illinois",
+            "countryCode": "United States"
+        },
+        "profiles": [
+            {
                 "network": "LinkedIn",
                 "username": "shawnheadrick",
+                "website": "https://www.linkedin.com/in/shawnheadrick/",
                 "url": "https://www.linkedin.com/in/shawnheadrick/"
             },
             {
                 "network": "GitHub",
                 "username": "IronManRust",
+                "website": "https://www.github.com/IronManRust",
                 "url": "https://www.github.com/IronManRust"
             }
         ]
     },
-    "work": [{
+    "work": [
+        {
+            "name": "Cengage Group",
             "company": "Cengage Group",
             "position": "Senior Software Engineer",
             "website": "https://www.cengagegroup.com",
+            "url": "https://www.cengagegroup.com",
             "startDate": "2019-06-03",
             "summary": "",
             "highlights": []
         },
         {
+            "name": "Cengage Group",
             "company": "Cengage Group",
             "position": "Software Engineer",
             "website": "https://www.cengagegroup.com",
+            "url": "https://www.cengagegroup.com",
             "startDate": "2010-04-05",
             "endDate": "2019-06-02",
             "summary": "",
             "highlights": []
         },
         {
+            "name": "Applied Systems",
             "company": "Applied Systems",
             "position": "Software Developer",
             "website": "https://www.appliedsystems.com",
+            "url": "https://www.appliedsystems.com",
             "startDate": "2006-03-06",
             "endDate": "2010-04-02",
             "summary": "",
             "highlights": []
         }
     ],
-    "education": [{
-        "institution": "University of Illinois, Urbana-Champaign",
-        "area": "Computer Science",
-        "studyType": "Bachelor's Degree",
-        "startDate": "2001-08-21",
-        "endDate": "2005-05-23",
-        "courses": [
-            "Business Administration Minor"
-        ]
-    }],
-    "skills": [{
+    "education": [
+        {
+            "institution": "University of Illinois, Urbana-Champaign",
+            "website": "https://www.illinois.edu",
+            "url": "https://www.illinois.edu",
+            "area": "Computer Science",
+            "studyType": "Bachelor's Degree",
+            "startDate": "2001-08-21",
+            "endDate": "2005-05-23",
+            "courses": []
+        },
+        {
+            "institution": "University of Illinois, Urbana-Champaign",
+            "website": "https://www.illinois.edu",
+            "url": "https://www.illinois.edu",
+            "area": "Business Administration",
+            "studyType": "Minor",
+            "startDate": "2001-08-21",
+            "endDate": "2005-05-23",
+            "courses": []
+        }
+    ],
+    "volunteer": [],
+    "awards": [],
+    "publications": [],
+    "skills": [
+        {
             "name": "Back-End Development",
             "level": "Advanced",
             "keywords": [
@@ -83,8 +117,12 @@
             ]
         }
     ],
-    "languages": [{
-        "language": "English",
-        "fluency": "Native Speaker"
-    }]
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native Speaker"
+        }
+    ],
+    "interests": [],
+    "references": []
 }
