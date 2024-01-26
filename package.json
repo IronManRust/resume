@@ -25,6 +25,7 @@
         "url": "https://www.github.com/IronManRust/resume/issues"
     },
     "license": "MIT",
+    "type": "commonjs",
     "scripts": {
         "clean": "./node_modules/.bin/rimraf ./dist",
         "build": "npm run clean && npm run build-index && npm run build-dependencies && npm run build-metadata && npm run build-resume-json && npm run build-resume-txt && npm run build-resume-html && npm run build-resume-pdf && npm run build-resume-md && npm run build-resume-yml",
