@@ -87,7 +87,14 @@
     ],
     "volunteer": [],
     "awards": [],
+    "certificates": [{
+        "name": "The Nuts and Bolts of OAuth 2.0",
+        "date": "2024-03-25",
+        "issuer": "Udemy",
+        "url": "https://www.udemy.com/certificate/UC-c71be1f8-361c-4ca1-baf7-100367ecb5a0/"
+    }],
     "publications": [],
+    "projects": [],
     "skills": [
         {
             "name": "Back-End Development",
